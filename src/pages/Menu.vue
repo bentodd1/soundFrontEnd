@@ -6,13 +6,13 @@
        <label>
         {{recording.name}}
           </label>
-          
+
         </q-btn>
 
      <!--<div>Choose your dream</div> -->
       </q-item>
        </q-page>
-      
+
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
     },
      components: {
     Index,
- }, 
+ },
 
 
 };

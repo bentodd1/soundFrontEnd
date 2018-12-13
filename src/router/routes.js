@@ -4,14 +4,12 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Menu') }
+      { path: '', component: () => import('pages/Menu') },
+      {    path: '/index', component: () => import('pages/Index')},
+
     ]
   },
-  {
-    path: '/listen',
-    name: 'listen',
-    component: () => import('pages/Index')
-  },
+
 ]
 
 // Always leave this as last one
