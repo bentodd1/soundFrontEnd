@@ -2,10 +2,11 @@
 
   <q-page class="flex flex-center">
     <q-item v-for="recording in recordings.all" >
-      <q-btn color="primary" class="full-width">
+      <q-btn color="primary" class="full-width" @click="$router.push('/index')">
        <label>
         {{recording.name}}
           </label>
+          
         </q-btn>
 
      <!--<div>Choose your dream</div> -->
@@ -16,6 +17,7 @@
 
 <script>
 import recordings from '../data/recordings';
+import Index from './index';
 
 export default {
       name: 'PageMenu',
@@ -24,6 +26,9 @@ export default {
         recordings,
         };
     },
+     components: {
+    Index,
+ }, 
 
 
 };
