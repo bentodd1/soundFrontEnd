@@ -1,6 +1,7 @@
 <template>
 
   <q-page class="flex flex-center">
+     <div style="width: 500px; max-width: 90vw;">
     <q-item v-for="recording in recordings.all" >
       <q-btn color="primary" class="full-width" @click="goToDetail(recording.id)" >
        <label>
@@ -11,6 +12,7 @@
 
      <!--<div>Choose your dream</div> -->
       </q-item>
+      </div>
        </q-page>
 
 </template>
