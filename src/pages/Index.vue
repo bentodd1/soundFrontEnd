@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex flex-center">
+    <h2>{{this.$route.params.id}}</h2>
      <div>Cosmic Voyage Dreaming</div>
     <vue-audio :file ="file1"  />
     <img alt="Quasar logo" src="~assets/sleep.png">
@@ -15,7 +16,7 @@ import VueAudio from 'vue-audio';
 import VuetifyAudio from 'vuetify-audio';
 
 export default {
-  name: 'PageIndex',
+  name: 'Index',
 data() {
   return {
     //file1: '../assets/theJoker.mp3'

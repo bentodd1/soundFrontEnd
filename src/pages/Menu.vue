@@ -2,7 +2,7 @@
 
   <q-page class="flex flex-center">
     <q-item v-for="recording in recordings.all" >
-      <q-btn color="primary" class="full-width" @click="$router.push('/index')">
+      <q-btn color="primary" class="full-width" @click="goToDetail(recording.id)" >
        <label>
         {{recording.name}}
           </label>
@@ -29,6 +29,11 @@ export default {
      components: {
     Index,
  },
+ methods: {
+   goToDetail(id) {
+    this.$router.push({name:'Index',params:{id:id}})
+  }
+ }
 
 
 };
